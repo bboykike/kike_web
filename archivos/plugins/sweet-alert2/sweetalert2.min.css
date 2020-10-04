@@ -1,0 +1,618 @@
+.swal2 - container,
+body.swal2 - iosfix {
+    position: fixed;
+    left: 0;
+    right: 0
+}
+
+.swal2 - container {
+    display: -webkit - box;
+    display: -ms - flexbox;
+    display: flex;
+    top: 0;
+    bottom: 0;
+    padding: 10 px
+}
+
+.swal2 - container.swal2 - fade {
+    transition: background - color .1 s
+}
+
+.swal2 - modal {
+    margin: auto;
+    display: none;
+    position: relative
+}
+
+.swal2 - modal: focus {
+    outline: 0
+}
+
+.swal2 - modal.swal2 - title {
+    color: #595959;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 600;
+    text-transform: none;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    line-height: 60px;
+    display: block
+}
+
+.swal2-modal .swal2-spacer {
+    height: 10px;
+    color: transparent;
+    border: 0
+}
+
+.swal2-modal .swal2-styled {
+    border: 0;
+    border-radius: 3px;
+    box-shadow: none;
+    color: # fff;
+    cursor: pointer;
+    margin: 0 5 px;
+    padding: 10 px 32 px
+}
+
+.swal2 - modal.swal2 - styled: not(.swal2-loading)[disabled] {
+    opacity: .4;
+    cursor: no - drop
+}
+
+.swal2 - modal.swal2 - styled.swal2 - loading {
+    border: 4 px solid transparent;
+    width: 40 px;
+    height: 40 px;
+    padding: 0;
+    margin: -2 px 30 px;
+    color: transparent;
+    cursor: default;
+    animation: rotate - loading 1.5 s linear 0 s infinite normal
+}
+
+.swal2 - modal: not(.swal2-styled).swal2 - loading::after {
+    display: inline - block;
+    content: '';
+    height: 6 px;
+    width: 6 px;
+    border: 3 px solid #999;
+    border-right-color: transparent;
+    border-radius: 50%;
+    -webkit-animation: rotate-loading 1.5s linear 0s infinite normal;
+    animation: rotate-loading 1.5s linear 0s infinite normal
+}
+
+.swal2-modal .swal2-checkbox input,
+.swal2-modal .swal2-checkbox span,
+.swal2-modal .swal2-radio input,
+.swal2-modal .swal2-radio span {
+    vertical-align: middle
+}
+
+.swal2-modal .swal2-image {
+    margin: 20px auto;
+    max-width: 100%
+}
+
+.swal2-modal .swal2-close {
+    font-size: 36px;
+    line-height: 36px;
+    font-family: serif;
+    position: absolute;
+    top: 5px;
+    right: 13px;
+    cursor: pointer;
+    color: # ccc;
+    transition: color .1 s ease
+}
+
+.swal2 - modal.swal2 - close: hover {
+    color: #d55
+}
+
+.swal2 - modal>.swal2 - checkbox,
+.swal2 - modal>.swal2 - file,
+.swal2 - modal>.swal2 - input,
+.swal2 - modal>.swal2 - radio,
+.swal2 - modal>.swal2 - select,
+.swal2 - modal>.swal2 - textarea {
+    display: none
+}
+
+.swal2 - modal.swal2 - content {
+    position: relative;
+    float: none;
+    margin: 0;
+    padding: 0;
+    color: #545454
+}
+
+.swal2-modal .swal2-checkbox,
+.swal2-modal .swal2-file,
+.swal2-modal .swal2-input,
+.swal2-modal .swal2-radio,
+.swal2-modal .swal2-select,
+.swal2-modal .swal2-textarea {
+    margin: 20px auto
+}
+
+.swal2-modal .swal2-file,
+.swal2-modal .swal2-input,
+.swal2-modal .swal2-textarea {
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 3px;
+    border: 1px solid # d9d9d9;
+    transition: border - color box - shadow .3 s
+}
+
+.swal2 - modal.swal2 - file: focus,
+.swal2 - modal.swal2 - input: focus,
+.swal2 - modal.swal2 - textarea: focus {
+    outline: 0;
+    border: 1 px solid #b4dbed
+}
+
+.swal2 - modal.swal2 - file: focus::-webkit - input - placeholder,
+.swal2 - modal.swal2 - input: focus::-webkit - input - placeholder,
+.swal2 - modal.swal2 - textarea: focus::-webkit - input - placeholder {
+    transition: opacity .3 s .03 s ease;
+    opacity: .8
+}
+
+.swal2 - modal.swal2 - file: focus::-moz - placeholder,
+.swal2 - modal.swal2 - input: focus::-moz - placeholder,
+.swal2 - modal.swal2 - textarea: focus::-moz - placeholder {
+    transition: opacity .3 s .03 s ease;
+    opacity: .8
+}
+
+.swal2 - modal.swal2 - file: focus: -ms - input - placeholder,
+.swal2 - modal.swal2 - input: focus: -ms - input - placeholder,
+.swal2 - modal.swal2 - textarea: focus: -ms - input - placeholder {
+    transition: opacity .3 s .03 s ease;
+    opacity: .8
+}
+
+.swal2 - modal.swal2 - file: focus::placeholder,
+.swal2 - modal.swal2 - input: focus::placeholder,
+.swal2 - modal.swal2 - textarea: focus::placeholder {
+    transition: opacity .3 s .03 s ease;
+    opacity: .8
+}
+
+.swal2 - modal.swal2 - file::-webkit - input - placeholder,
+.swal2 - modal.swal2 - input::-webkit - input - placeholder,
+.swal2 - modal.swal2 - textarea::-webkit - input - placeholder {
+    color: #e6e6e6
+}
+
+.swal2 - modal.swal2 - file::-moz - placeholder,
+.swal2 - modal.swal2 - input::-moz - placeholder,
+.swal2 - modal.swal2 - textarea::-moz - placeholder {
+    color: #e6e6e6
+}
+
+.swal2 - modal.swal2 - file: -ms - input - placeholder,
+.swal2 - modal.swal2 - input: -ms - input - placeholder,
+.swal2 - modal.swal2 - textarea: -ms - input - placeholder {
+    color: #e6e6e6
+}
+
+.swal2 - modal.swal2 - file::placeholder,
+.swal2 - modal.swal2 - input::placeholder,
+.swal2 - modal.swal2 - textarea::placeholder {
+    color: #e6e6e6
+}
+
+.swal2 - modal.swal2 - range input {
+    float: left;
+    width: 80 %
+}
+
+.swal2 - modal.swal2 - range output {
+    float: right;
+    width: 20 %
+}
+
+.swal2 - modal.swal2 - range input,
+.swal2 - modal.swal2 - range output {
+    height: 43 px;
+    margin: 20 px auto;
+    padding: 0
+}
+
+.swal2 - modal.swal2 - input {
+    height: 43 px;
+    padding: 0 12 px
+}
+
+.swal2 - modal.swal2 - textarea {
+    height: 108 px;
+    padding: 12 px
+}
+
+.swal2 - modal.swal2 - select {
+    color: #545454;
+    font-size: inherit;
+    padding: 5px 10px;
+    min-width: 40%;
+    max-width: 100%
+}
+
+.swal2-modal .swal2-radio {
+    border: 0
+}
+
+.swal2-modal .swal2-radio label:not(:first-child) {
+    margin-left: 20px
+}
+
+.swal2-modal .swal2-radio input {
+    margin: 0 3px 0 0
+}
+
+.swal2-modal .swal2-checkbox {
+    color: # 545454
+}
+
+.swal2 - modal.swal2 - validationerror {
+    margin: 0 - 20 px;
+    overflow: hidden;
+    padding: 10 px;
+    color: gray;
+    display: none
+}
+
+.swal2 - modal.swal2 - validationerror::before {
+    content: '!';
+    display: inline - block;
+    width: 24 px;
+    height: 24 px;
+    color: #fff
+}
+
+@supports(-ms - accelerator:true) {
+    .swal2 - range input {
+        width: 100 %!important
+    }
+    .swal2 - range output {
+        display: none
+    }
+}
+
+@media all and(-ms - high - contrast:none),
+(-ms - high - contrast:active) {
+    .swal2 - range input {
+        width: 100 %!important
+    }
+    .swal2 - range output {
+        display: none
+    }
+}
+
+.swal2 - icon {
+    width: 80 px;
+    height: 80 px;
+    border: 4 px solid transparent;
+    margin: 20 px auto 30 px;
+    padding: 0;
+    position: relative;
+    cursor: default
+}
+
+.swal2 - icon.swal2 - error.x - mark {
+    position: relative;
+    display: block
+}
+
+.swal2 - icon.swal2 - error.line {
+    position: absolute;
+    height: 5 px;
+    width: 47 px;
+    display: block;
+    top: 37 px
+}
+
+.swal2 - icon.swal2 - error.line.left {
+    transform: rotate(45 deg);
+    left: 17 px
+}
+
+.swal2 - icon.swal2 - error.line.right {
+    transform: rotate(-45 deg);
+    right: 16 px
+}
+
+.swal2 - icon.swal2 - warning {
+    color: #f8bb86
+}
+
+.swal2 - icon.swal2 - info {
+    color: #3fc3ee;
+    border-color: # 9 de0f6
+}
+
+.swal2 - icon.swal2 - question {
+    color: #87adbd;
+    border-color: # c9dae1
+}
+
+.swal2 - icon.swal2 - success::after,
+.swal2 - icon.swal2 - success::before {
+    content: '';
+    position: absolute;
+    width: 60 px;
+    height: 120 px;
+    background: #fff
+}
+
+.swal2 - icon.swal2 - success::before {
+    top: -7 px;
+    left: -33 px;
+    transform: rotate(-45 deg)
+}
+
+.swal2 - icon.swal2 - success::after {
+    top: -11 px;
+    left: 30 px;
+    transform: rotate(-45 deg)
+}
+
+.swal2 - icon.swal2 - success.placeholder {
+    width: 80 px;
+    height: 80 px;
+    border: 4 px solid rgba(165, 220, 134, .2);
+    position: absolute;
+    left: -4 px;
+    top: -4 px
+}
+
+.swal2 - icon.swal2 - success.fix {
+    width: 7 px;
+    height: 90 px;
+    position: absolute;
+    left: 28 px;
+    top: 8 px;
+    transform: rotate(-45 deg)
+}
+
+.swal2 - icon.swal2 - success.line {
+    height: 5 px;
+    display: block;
+    position: absolute
+}
+
+.swal2 - icon.swal2 - success.line.tip {
+    width: 25 px;
+    left: 14 px;
+    top: 46 px;
+    transform: rotate(45 deg)
+}
+
+.swal2 - icon.swal2 - success.line.long {
+    width: 47 px;
+    right: 8 px;
+    top: 38 px;
+    transform: rotate(-45 deg)
+}
+
+.swal2 - progresssteps {
+    margin: 0 0 20 px;
+    padding: 0
+}
+
+.swal2 - progresssteps li {
+    display: inline - block;
+    position: relative
+}
+
+.swal2 - progresssteps.swal2 - progresscircle {
+    background: #3085d6;
+    border-radius: 2em;
+    color: # fff;
+    height: 2 em;
+    width: 2 em
+}
+
+.swal2 - progresssteps.swal2 - progresscircle.swal2 - activeprogressstep {
+    background: #3085d6
+}
+
+.swal2-progresssteps .swal2-progresscircle.swal2-activeprogressstep~.swal2-progresscircle,
+.swal2-progresssteps .swal2-progresscircle.swal2-activeprogressstep~.swal2-progressline {
+    background: # add8e6
+}
+
+.swal2 - progresssteps.swal2 - progressline {
+    background: #3085d6;
+    height: .4em;
+    margin: 0 -1px;
+    z-index: 10
+}
+
+@ - webkit - keyframes showSweetAlert {
+    transform: scale(.7)
+}
+
+45 % {
+    transform: scale(1.05)
+}
+
+80 % {
+    transform: scale(.95)
+}
+
+100 % {
+    transform: scale(1)
+}
+
+45 % {
+    transform: scale(1.05)
+}
+
+80 % {
+    transform: scale(.95)
+}
+
+100 % {
+    transform: scale(1)
+}
+
+100 % {
+    transform: scale(.5);
+    opacity: 0
+}
+
+100 % {
+    transform: scale(.5);
+    opacity: 0
+}
+
+.swal2 - show.swal2 - noanimation {
+    animation: none
+}
+
+.swal2 - hide {
+    animation: hideSweetAlert .15 s forwards
+}
+
+.swal2 - hide.swal2 - noanimation {
+    animation: none
+}
+
+@ - webkit - keyframes animate - success - tip {
+    left: 1 px;
+    top: 19 px
+}
+
+70 % {
+    width: 50 px;
+    left: -8 px;
+    top: 37 px
+}
+
+84 % {
+    width: 17 px;
+    left: 21 px;
+    top: 48 px
+}
+
+100 % {
+    width: 25 px;
+    left: 14 px;
+    top: 45 px
+}
+
+70 % {
+    width: 50 px;
+    left: -8 px;
+    top: 37 px
+}
+
+84 % {
+    width: 17 px;
+    left: 21 px;
+    top: 48 px
+}
+
+100 % {
+    width: 25 px;
+    left: 14 px;
+    top: 45 px
+}
+
+84 % {
+    width: 55 px;
+    right: 0;
+    top: 35 px
+}
+
+100 % {
+    width: 47 px;
+    right: 8 px;
+    top: 38 px
+}
+
+84 % {
+    width: 55 px;
+    right: 0;
+    top: 35 px
+}
+
+100 % {
+    width: 47 px;
+    right: 8 px;
+    top: 38 px
+}
+
+100 %,
+12 % {
+    transform: rotate(-405 deg)
+}
+
+100 %,
+12 % {
+    transform: rotate(-405 deg)
+}
+
+.animate - success - long {
+    animation: animate - success - long .75 s
+}
+
+.swal2 - success.animate::after {
+    animation: rotatePlaceholder 4.25 s ease - in
+}
+
+@ - webkit - keyframes animate - error - icon {
+    transform: rotateX(100 deg);
+    opacity: 0
+}
+
+100 % {
+    transform: rotateX(0);
+    opacity: 1
+}
+
+100 % {
+    transform: rotateX(0);
+    opacity: 1
+}
+
+@ - webkit - keyframes animate - x - mark {
+    transform: scale(.4);
+    opacity: 0
+}
+
+80 % {
+    transform: scale(1.15)
+}
+
+100 % {
+    transform: scale(1);
+    opacity: 1
+}
+
+80 % {
+    transform: scale(1.15)
+}
+
+100 % {
+    transform: scale(1);
+    opacity: 1
+}
+
+@ - webkit - keyframes rotate - loading {
+    transform: rotate(0)
+}
+
+100 % {
+    transform: rotate(360 deg)
+}
+
+100 % {
+    transform: rotate(360 deg)
+}

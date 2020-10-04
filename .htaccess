@@ -1,0 +1,7 @@
+Options All -Indexes
+ErrorDocument 404 /404-vista.php 
+ErrorDocument 403 /403-vista.php
+
+RewriteEngine On
+RewriteRule ^([a-zA-Z0-9/]+)$ index.php?vista=$1
+
