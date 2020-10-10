@@ -15,7 +15,8 @@ r.Nombre as NombreRol,
 u.contrasenia as con 
 FROM usuarios AS u
 INNER JOIN empleados AS e ON e.id_empleado=u.id_empleado
-INNER JOIN Roles AS r ON r.id_rol=u.id_rol";
+INNER JOIN Roles AS r ON r.id_rol=u.id_rol
+WHERE e.estatus_empleado='activo'";
 $resultado=$conexion->query($query);
 while($row=$resultado->fetch_assoc()){
 
