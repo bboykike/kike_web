@@ -27,37 +27,37 @@ function printTable(res) {
         rowId: "id_cliente",
         data: res,
         columns: [{
-                data: "RFC",
+            data: "RFC",
+        },
+        {
+            data: "cliente",
+        },
+        {
+            data: "Telefono",
+        },
+        {
+            data: "Celular",
+        },
+        {
+            data: "Email",
+        },
+        {
+            data: "Estado",
+        },
+        {
+            data: null,
+            className: "estatus",
+            render: function (data, type, row) {
+                return estatusRender(data);
             },
-            {
-                data: "cliente",
+        },
+        {
+            data: null,
+            className: "acciones",
+            render: function (data, type, row) {
+                return editarCliente(data);
             },
-            {
-                data: "Telefono",
-            },
-            {
-                data: "Celular",
-            },
-            {
-                data: "Email",
-            },
-            {
-                data: "Estado",
-            },
-            {
-                data: null,
-                className: "estatus",
-                render: function(data, type, row) {
-                    return estatusRender(data);
-                },
-            },
-            {
-                data: null,
-                className: "acciones",
-                render: function(data, type, row) {
-                    return editarCliente(data);
-                },
-            },
+        },
         ],
         language: {
             search: "Buscar:",
@@ -79,10 +79,10 @@ function printTable(res) {
 function estatusRender(data) {
     switch (data.estatus_cliente) {
         case "activo":
-            return "<span class='external-event bg-success'>Activo</span>";
+            return "<span class='label label-success'>Activo</span>";
             break;
         default:
-            return "<span class='external-event bg-danger'>Inactivo</span>";
+            return "<span class='label label-danger'>Inactivo</span>";
     }
 }
 

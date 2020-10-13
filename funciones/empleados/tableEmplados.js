@@ -3,6 +3,7 @@ var Table;
 var empleados = [];
 $(document).ready(() => {
     getContentEmpleados();
+    initializeComponentsSelect();
 });
 async function getContentEmpleados() {
     let subEmpleados = [];
@@ -185,4 +186,33 @@ function imagen(data) {
         );
     }
 
+}
+
+
+
+async function initializeCreateModalComponents(area, area2) {
+    $("#area").select2({
+        placeholder: "Seleccione un departamento",
+        data: area,
+        width: "100%",
+    });
+
+    $("#area2").select2({
+        placeholder: "Seleccione un departamento",
+        data: area2,
+        width: "100%",
+    });
+
+}
+
+function initializeComponentsSelect() {
+    initializeModalsComponentsSe();
+}
+
+async function initializeModalsComponentsSe() {
+    var areas = [{ id: 0, text: "Seleccione un departamento" }];
+    var area2 = [{ id: 0, text: "Seleccione un departamento" }];
+
+
+    initializeCreateModalComponents(areas, area2);
 }

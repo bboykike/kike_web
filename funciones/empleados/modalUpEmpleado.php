@@ -8,18 +8,20 @@
             </div>
             <div class="modal-body">
                 <form action="" method="POST" id="empleados_form_up" autocomplete="off" enctype="multipart/form-data">
-                    <input type="text" name="id_empleado" id="id_empleado">
+                    <input type="text" style="display:none;" name="id_empleado" id="id_empleado">
                     <div class="row">
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label>Nombre*</label>
-                                <input class="form-control" type="text" name="nombre2" id="nombre2" required>
+                                <input style="text-transform: capitalize;" class="form-control" type="text"
+                                    name="nombre2" id="nombre2" required>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label>Apellido*</label>
-                                <input class="form-control" type="text" name="apellido2" id="apellido2" required>
+                                <input style="text-transform: capitalize;" class="form-control" type="text"
+                                    name="apellido2" id="apellido2" required>
                             </div>
                         </div>
                     </div>
@@ -27,14 +29,14 @@
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label>Dirección*</label>
-                                <input class="form-control" type="text" name="direccion2" id="direccion2" required>
+                                <input style="text-transform: capitalize;" class="form-control" type="text"
+                                    name="direccion2" id="direccion2" required>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label>Departamento*</label>
                                 <select name="area2" id="area2" class="form-control select2" required>
-                                    <option value="0">Selecciona un departamento</option>
                                     <option value="Administrador">Administrador</option>
                                     <option value="Soporte">Soporte</option>
                                     <option value="Desarrollo">Desarrollo</option>

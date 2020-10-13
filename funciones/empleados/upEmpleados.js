@@ -19,6 +19,10 @@ $(document).ready(function () {
             $.trim(estatus4).length > 0
         ) {
 
+            if (area2.val() == 0) {
+                alert('Selecciona');
+            }
+
             $.ajax({
                 url: "../funciones/empleados/upEmpleados.php",
                 method: "POST",

@@ -12,13 +12,15 @@
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label>Nombre*</label>
-                                <input class="form-control" type="text" name="nombre" id="nombre" required>
+                                <input style="text-transform: capitalize;" class="form-control" type="text"
+                                    name="nombre" id="nombre" required>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label>Apellido*</label>
-                                <input class="form-control" type="text" name="apellido" id="apellido" required>
+                                <input style="text-transform: capitalize;" class="form-control" type="text"
+                                    name="apellido" id="apellido" required>
                             </div>
                         </div>
                     </div>
@@ -26,14 +28,14 @@
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label>Dirección*</label>
-                                <input class="form-control" type="text" name="direccion" id="direccion" required>
+                                <input style="text-transform: capitalize;" class="form-control" type="text"
+                                    name="direccion" id="direccion" required>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label>Departamento*</label>
                                 <select name="area" id="area" class="form-control select2" required>
-                                    <option value="0">Selecciona un departamento</option>
                                     <option value="Administrador">Administrador</option>
                                     <option value="Soporte">Soporte</option>
                                     <option value="Desarrollo">Desarrollo</option>
